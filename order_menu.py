@@ -26,7 +26,6 @@ while True:
     if (order_2=='Yes'):
         takeOrder()
     elif(order_2=='No'):
-        print("Your order is confirmed")
         print("Your total order cost is $",Total)
 
         break
