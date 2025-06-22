@@ -25,14 +25,14 @@ while True:
     order_2=input("Do you want to add more items? (Yes/No)").capitalize()
     if (order_2=='Yes'):
         takeOrder()
-    elif(order_2=='No'):
-        print("Your total order cost is $",Total)
+    # elif(order_2=='No'):
+    #     print("Your order is confirmed")
+    #     print("Your total order cost is $",Total)
 
+    #     break
+    elif(Total==0):
+        print("You didnt order anything")
         break
     else:
         print("Your total order cost is $",Total)
         break
-
-
-
-
