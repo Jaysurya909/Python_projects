@@ -24,7 +24,9 @@ index_check=[[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
 print("The game has begun")
 win1=None
 win2=None
+game=0
 while(True):
+   
     value=int(input("X's Turn:-"))
     xstate[value]=1
     box()
@@ -35,6 +37,9 @@ while(True):
             break
     if(win1==True):
         print("X is The Winner!!\n")
+        break
+    if(game==4):
+        print("The game is draw!!")
         break
     value2=int(input("O's Turn:-"))
     ostate[value2]=1
@@ -47,6 +52,8 @@ while(True):
     if(win2==True):
         print("O is The Winner!!\n")
         break
+    game=game+1
+    
 
     
    
