@@ -19,9 +19,16 @@ class library():
 
 
 
-p1=library()
-p1.getinfo()
-p1.display()
+# p1=library()
+# p1.getinfo()
+# p1.display()
+
+
+library_limit=int(input("How many libraries you want to enter?"))
+for i in range(library_limit):
+    i=library()
+    i.getinfo()
+    i.display()
 
 
 
