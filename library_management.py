@@ -16,6 +16,8 @@ class library():
         print(f"The name of the library is {self.name}")
         for i in range(self.booklimit):
             print(f"The no of book is {self.no_books[i]} and the name of the book is {self.Book_name[i]}")
+        
+    def check(self):    
         if(len(self.no_books)==len(self.Book_name)):
             print("The no of books and no of entries are same")
         else:
@@ -33,6 +35,7 @@ for i in range(library_limit):
     i=library()
     i.getinfo()
     i.display()
+    i.check()
 
 
 
