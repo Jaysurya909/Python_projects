@@ -1,22 +1,39 @@
 class library():
-    booklimit=0
-    no_books=[]
-    Book_name=[]
+    def __init__(self):
+        self.no_books = [] # list to store book numbers
+        self.Book_name = [] # list to store book names
+        self.name=input("Enter the Library Name")
+        self.booklimit = int(input("Enter the book limit"))  # limit for number of books
+        
+
+    def getinfo(self):
+        for i in range(self.booklimit):
+            self.no_books.append(int(input("Entere the book number\n")))
+            self.Book_name.append(input("Enter the Book name\n"))
+
+
+    def display(self):
+        print(f"The name of the library is {self.name}")
+        for i in range(self.booklimit):
+            print(f"The no of book is {self.no_books[i]} and the name of the book is {self.Book_name[i]}")
 
 
 
-l1=library()
-
-l1.booklimit=int(input("How many books you wanna enter"))
-
-
-for i in range(0,l1.booklimit):
-    l1.no_books.append(int(input("Enter the book number\n")))   #cannot use l1.no_books[i] as it is not defined yet and it is a nonexistent index
-    l1.Book_name.append(input("Enter the book name\n"))
+p1=library()
+p1.getinfo()
+p1.display()
 
 
-for i in range(0,l1.booklimit):
-    print(f"The book number is {l1.no_books[i]} and name of the book is {l1.Book_name[i]}")
+
+# for i in range(p1.booklimit):
+#     p1.getinfo()
+
+
+# for i in range(p1.booklimit):
+#     p1.display()
+
+
+
 
 
 
