@@ -12,15 +12,16 @@ def water():
 
 def sound():
     pygame.mixer.init()
-    sound_file = pygame.mixer.Sound('mixkit-liquid-bubble-3000.wav')
+    sound_file = pygame.mixer.Sound('drink_water1.mp3')
     sound_file.play()
     
 
 
 while True:
-    time.sleep(600)# sleeps for 10 mintutes after a notification
+   
     water()
     time.sleep(1)# to stop the overlapping of notification sound with windows
     sound()
+    time.sleep(600)# sleeps for 10 mintutes after a notification
     
     # this program will generate drink water notification after every 10 minutes
