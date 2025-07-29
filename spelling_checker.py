@@ -9,12 +9,13 @@ class spelling:
         
     def corrector(self):
         self.mistakes=[]
-        for words in self.list:
+        for i,words in enumerate(self.list):
             if spell.correction(words)!=words:
                 self.mistakes.append(spell.correction(words))
+                self.list[i]=spell.correction(words)
         
         print(self.mistakes)
-
+        print(self.list)
         
 a1=spelling()
 a1.input()
